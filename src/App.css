@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  margin-top: 30%;
+  background-color: rgb(138, 101, 169);
+  font-family: Arial, sans-serif;
+}
+
+.quantity {
+  display: inline-block;
+  text-align: center;
+}
+
+.quantity a, .quantity_input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.quantity_minus, .quantity_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%;
+  background-color: #6c63ff; /* Background color */
+  color: white; /* Text color */
+  text-decoration: none;
+  font-size: 24px; /* Adjust the font size as needed */
+  cursor: pointer;
+  border: none; /* No border */
+  margin: 0 10px; /* Space between elements */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.quantity_minus:hover, .quantity_plus:hover {
+  background-color: #5753c9; /* Hover background color */
+  color: #fff; /* Hover text color */
+}
+
+.quantity_input {
+  width: 60px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  text-align: center;
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Adjust the font size as needed */
+  margin: 0 10px; /* Space between elements */
+  outline: none; /* Remove outline on focus */
+}
+
+.quantity_input:focus {
+  border-color: #6c63ff; /* Border color on focus */
+}
+
+.quantity_minus span, .quantity_plus span {
+  line-height: 1; /* Center text vertically */
+}
